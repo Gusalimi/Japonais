@@ -1,0 +1,74 @@
+\documentclass[a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{CJKutf8}
+\usepackage{textcomp}
+\usepackage{caption}
+\usepackage{blindtext}
+\usepackage{xcolor}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan,
+    pdftitle={Cours de Japonais},
+}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{}
+\fancyhead[C]{\leftmark}
+\fancyhead[R]{}
+\setlength{\headheight}{13pt}
+
+\title{Cours de Japonais}
+\author{Guillaume \textsc{Sailé} \thanks{Basé sur les \href{https://www.youtube.com/channel/UChFfLNTK64xQj7NscGmLLLg}{cours de Julien Fontanier}}}
+\date{}
+
+\begin{document}
+\begin{CJK}{UTF8}{goth}
+\maketitle
+\tableofcontents
+\part{Les bases du japonais}
+\chapter{Les systèmes d'écritures japonais}
+Il existe plusieurs alphabets en japonais, les kana (かな) et les kanji (漢字).
+
+Voyons d'abord les かな.
+\section{Les かな}
+\subsection{Les ひらがな}
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c c c c c}
+    & -a & - i & - u & - e & - o\\
+    \hline
+    & あ & い & う & え & お\\
+ k- & か & き & く & け & こ\\
+ s- & さ & し & す & せ & そ\\
+\end{tabular}
+\caption*{Tableau des Hiragana}
+\end{table}
+
+\subsection{Les ヒラガナ}
+\begin{table}[h]
+\centering
+\begin{tabular}{c|c c c c c}
+    & -a & -i & -u & -e & -o\\
+    \hline
+    & ア & イ & ウ & エ & オ\\
+ k- & カ & キ & ク & ケ & コ\\
+ s- & サ & シ & ス & セ & ソ\\
+\end{tabular}
+\caption*{Tableau des Katakana}
+\end{table}
+
+\blindtext
+
+\blindtext
+
+\end{CJK}
+\end{document}
